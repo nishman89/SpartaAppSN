@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9f3db375839d5a107f447faafbda1e2f" label="Courses" max_length="40" name="x_snc_sparta_acade_courses" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Course Id" mandatory="true" max_length="40" name="course_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="tentative" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complete" value="complete"/>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Tentative" value="tentative"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="java_test" label="Stream" mandatory="true" max_length="40" name="stream" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Business Solutions" value="business_solutions"/>
+                <element inactive_on_update="false" label="C# Dev" value="c_dev"/>
+                <element inactive_on_update="false" label="C# Test" value="c_test"/>
+                <element inactive_on_update="false" label="Data Engineering" value="data_engineering"/>
+                <element inactive_on_update="false" label="DevOps" value="devops"/>
+                <element inactive_on_update="false" label="Java Dev" value="java_dev"/>
+                <element inactive_on_update="false" label="Java Test" value="java_test"/>
+                <element inactive_on_update="false" label="ServiceNow" value="servicenow"/>
+            </choice>
+        </element>
+    </element>
+</database>
